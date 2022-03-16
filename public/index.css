@@ -1,0 +1,65 @@
+body {
+    background: #ddd;
+    margin: 1rem;
+    padding: 1rem;
+    max-width: 500px;
+    margin: 2rem auto;
+    font-family: "Open Sans", sans-serif;
+}
+
+nav {
+    border-bottom: 2px solid orange;
+}
+
+ol {
+    padding-left: 0;
+}
+
+.crumb {
+    margin-right: 2em;
+    display: inline;
+}
+a {
+	color: orange;
+}
+
+a:visited {
+	color: crimson;
+}
+
+
+input {
+	display: block;
+}
+
+img {
+	max-width: 300px;
+}
+
+.profBtns {
+	display: block;
+	width: 100%;
+	border: 5%;
+	background-color: yellow;
+	padding: 14px 28px;
+	font-size: 24px;
+	color: blue;
+	text-align: center;
+}
+
+#pic-me {
+	display: block;
+	margin-left: 10%;
+	border: 5px solid blue;
+	border-radius: 50%;
+	padding: 5px;
+	width: 150%;
+}
+
+#name {
+	color: blue;
+	display: block;
+	margin-left: 18%;
+	padding: 5px;
+	width: 150%;
+}
