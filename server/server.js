@@ -18,6 +18,8 @@ var rollbar = new Rollbar({
 // record a generic message and send it to Rollbar
 rollbar.log('Hello world!')
 
+let nameArr = []; 
+
 app.use(express.static(path.join(__dirname, "../public"))); 
 
 app.get('/', (req, res) => {
@@ -31,10 +33,18 @@ app.get('/', (req, res) => {
 //     res.status(200).send(students)
 // })
 
+app.post('/names', (req, res) => {
+    let {name} = req.body
+
+    nameArr.push(name)
+    rollbar.info("we added a name")
+    res.status(200).send(nameArr)
+
+})
 
 
-
-const port = process.env.PORT || 4005; 
+// command d
+const port = process.env.PORT || 5501; 
 
 app.listen(port, () => {
     console.log(`Server is running on ${port}`);
