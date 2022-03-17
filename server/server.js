@@ -22,8 +22,9 @@ let nameArr = [];
 
 app.use(express.static(path.join(__dirname, "../public"))); 
 
+// Roll
 app.get('/', (req, res) => {
-    rollbar.info("we got something")
+    // rollbar.info("we got something")
     res.sendFile(path.join(__dirname, '../public'))
 })
 
